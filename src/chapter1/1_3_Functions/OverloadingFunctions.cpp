@@ -3,10 +3,10 @@
 //
 #include "OverloadingFunctions.h"
 void print(int value){
-    std::cout << "the value is : " << value;
+    std::cout << "the value is : " << value << std::endl;
 }
 void print(double value){
-    std::cout << "the value is : " << value;
+    std::cout << "the value is : " << value << std::endl;
 }
 void print(const std::string& value){
     std::cout << "the value is : " << value << std::endl;
