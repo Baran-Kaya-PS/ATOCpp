@@ -8,6 +8,8 @@
 class Vector {
 public:
     Vector(int size);
+    ~Vector();
+
 };
 
 
