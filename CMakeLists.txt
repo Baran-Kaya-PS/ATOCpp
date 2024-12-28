@@ -3,4 +3,7 @@ project(ATOCpp)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(ATOCpp main.cpp)
+add_executable(ATOCpp
+        "src/chapter1/1_2_Programs/HelloWorld.cpp"
+        "src/chapter1/1_2_Programs/HelloWorld.h"
+        src/main.cpp)
