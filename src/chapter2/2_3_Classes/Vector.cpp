@@ -4,9 +4,15 @@
 
 #include "Vector.h"
 
-Vector::Vector(int size) {
+Vector::Vector(int s) : elem{new double[s]}, sz {s} {} // elem = new double, sz = s
 
+// Constructor can be written this way
+/*
+Vector::Vector(int s) {
+    elem = new double[s];
+    sz = s;
 }
+*/
 
 Vector::~Vector() {
 
