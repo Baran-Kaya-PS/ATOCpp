@@ -1,6 +1,6 @@
 #include <iostream>
-
+#include "chapter1/1_2_Programs/HelloWorld.h"
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    HelloWorld();
     return 0;
 }
