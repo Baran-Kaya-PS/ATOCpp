@@ -11,7 +11,9 @@ public:
     ~Vector();
     double &operator[](int index);
     int size() const;
-
+private:
+    double* elem;
+    int sz;
 };
 
 
