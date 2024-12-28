@@ -5,4 +5,7 @@
 void print(int value){
     std::cout << "the value is : " << value;
 }
+void print(double value){
+    std::cout << "the value is : " << value;
+}
 #include "OverloadingFunctions.h"
