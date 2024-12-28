@@ -7,5 +7,5 @@
 
 double sqrt(double value);
 double square(double value);
-
+int* next_elem(int* ptr);
 #endif //ATOCPP_BASICFUNCTIONS_H

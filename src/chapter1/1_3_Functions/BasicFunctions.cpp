@@ -9,3 +9,6 @@ double sqrt(double value){
 double square(double value){
     return value*value; // could use std::pow(value,2)
 }
+int* next_elem(int* ptr){
+    return ptr+1; // can be use to iterate through an int array
+}
