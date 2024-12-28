@@ -9,6 +9,8 @@ class Vector {
 public:
     Vector(int size);
     ~Vector();
+    double &operator[](int index);
+    int size() const;
 
 };
 
