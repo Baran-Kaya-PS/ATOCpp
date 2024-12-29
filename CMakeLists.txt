@@ -15,6 +15,8 @@ target_include_directories(chapter1 PUBLIC
 
 add_library(chapter2 STATIC
         src/chapter2/2_3_Classes/source/Vector.cpp
+        src/chapter2/2_4_Enumeration/TrafficLight.cpp
+        src/chapter2/2_4_Enumeration/TrafficLight.h
 )
 
 target_include_directories(chapter2 PUBLIC
@@ -23,6 +25,8 @@ target_include_directories(chapter2 PUBLIC
 
 add_executable(ATOCpp
         src/main.cpp
+        tests/chapter2_tests/test_TrafficLight.cpp
+        tests/chapter2_tests/test_TrafficLight.h
 )
 
 target_link_libraries(ATOCpp PRIVATE chapter1 chapter2)
