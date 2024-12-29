@@ -2,7 +2,7 @@
 // Created by Baran on 12/28/2024.
 //
 
-#include "Vector.h"
+#include "../include/Vector.h"
 
 Vector::Vector(int s) : elem{new double[s]}, sz {s} {} // elem = new double, sz = s
 
