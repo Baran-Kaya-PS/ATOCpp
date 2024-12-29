@@ -3,13 +3,19 @@ project(ATOCpp)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(ATOCpp
-        "src/chapter1/1_2_Programs/HelloWorld.cpp"
-        "src/chapter1/1_2_Programs/HelloWorld.h"
+set(SOURCES
         src/main.cpp
-        src/chapter1/1_3_Functions/BasicFunctions.cpp
-        src/chapter1/1_3_Functions/BasicFunctions.h
-        src/chapter1/1_3_Functions/OverloadingFunctions.cpp
-        src/chapter1/1_3_Functions/OverloadingFunctions.h
-        src/chapter2/2_3_Classes/Vector.cpp
-        src/chapter2/2_3_Classes/Vector.h)
+        src/chapter1/1_2_Programs/source/HelloWorld.cpp
+        src/chapter1/1_3_Functions/source/BasicFunctions.cpp
+        src/chapter1/1_3_Functions/source/OverloadingFunctions.cpp
+        src/chapter2/2_3_Classes/source/Vector.cpp
+    )
+
+set(HEADERS
+        src/chapter1/1_2_Programs/include/HelloWorld.h
+        src/chapter1/1_3_Functions/include/BasicFunctions.h
+        src/chapter1/1_3_Functions/include/OverloadingFunctions.h
+        src/chapter2/2_3_Classes/include/Vector.h
+)
+
+add_executable(ATOCpp ${SOURCES} ${HEADERS})
