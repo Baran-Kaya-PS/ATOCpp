@@ -85,26 +85,6 @@ ATOCpp/
 - [CMake](https://cmake.org/) for build configuration
 - [Google Test](https://github.com/google/googletest) for unit testing
 
-### Build Instructions
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/ATOCpp.git
-   cd ATOCpp
-   ```
-2. Configure the build:
-   ```bash
-   cmake -S . -B build
-   ```
-3. Compile the project:
-   ```bash
-   cmake --build build
-   ```
-4. Run the tests:
-   ```bash
-   ./build/tests
-   ```
-
----
 
 ## Key Highlights
 - Modular Design: Code is organized into reusable modules with separate compilation.
