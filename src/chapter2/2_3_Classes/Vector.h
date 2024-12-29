@@ -7,7 +7,7 @@
 
 class Vector {
 public:
-    Vector(int size);
+    Vector(int s);
     ~Vector();
     double &operator[](int index);
     int size() const;
