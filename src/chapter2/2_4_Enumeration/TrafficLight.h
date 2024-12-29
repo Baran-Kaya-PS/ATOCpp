@@ -10,8 +10,8 @@ enum class TrafficLight {
     RED,YELLOW,GREEN
 };
 
-TrafficLight& operator++(TrafficLight light);
+TrafficLight& operator++(TrafficLight &light);
 
-TrafficLight& operator++(TrafficLight light,int);
+TrafficLight& operator+=(TrafficLight &light,int shift);
 
 #endif //ATOCPP_TRAFFICLIGHT_H
