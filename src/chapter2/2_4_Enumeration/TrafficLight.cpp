@@ -18,3 +18,10 @@ TrafficLight& operator++(TrafficLight &light){
     }
     return light;
 }
+
+TrafficLight& operator+=(TrafficLight &light, int shift){
+    for (int i = 0; i < shift; i++){
+        light = ::operator++(light);
+    }
+    return light;
+}
