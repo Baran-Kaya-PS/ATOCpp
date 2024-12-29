@@ -10,4 +10,6 @@ enum class TrafficLight {
     RED,YELLOW,GREEN
 };
 
+TrafficLight& operator++(TrafficLight light);
+
 #endif //ATOCPP_TRAFFICLIGHT_H
