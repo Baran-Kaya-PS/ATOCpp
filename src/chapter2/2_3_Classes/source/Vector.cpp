@@ -3,7 +3,7 @@
 //
 
 #include "../include/Vector.h"
-
+#include <stdexcept>
 Vector::Vector(int s) : elem{new double[s]}, sz {s} {} // elem = new double, sz = s
 
 // Constructor can be written this way
@@ -20,7 +20,10 @@ Vector::~Vector() {
 
 // Member function: Access elements in the vector
 double& Vector::operator[](int index) {
-
+    if (index < 0 || index >= this->size()){
+        throw std::out_of_range("Index out of bounds")
+    }
+    return this->elem[index];
 }
 
 // Member function: Get the size of the vector
