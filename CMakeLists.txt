@@ -4,13 +4,13 @@ project(ATOCpp)
 set(CMAKE_CXX_STANDARD 23)
 
 add_library(chapter1 STATIC
-        src/chapter1/1_2_Programs/source/HelloWorld.cpp
-        src/chapter1/1_3_Functions/source/BasicFunctions.cpp
-        src/chapter1/1_3_Functions/source/OverloadingFunctions.cpp
+        src/chapter1/1_2_Programs/Source/HelloWorld.cpp
+        src/chapter1/1_3_Functions/Source/BasicFunctions.cpp
+        src/chapter1/1_3_Functions/Source/OverloadingFunctions.cpp
 )
 target_include_directories(chapter1 PUBLIC
-        src/chapter1/1_2_Programs/include
-        src/chapter1/1_3_Functions/include
+        src/chapter1/1_2_Programs/Include
+        src/chapter1/1_3_Functions/Include
 )
 
 add_library(chapter2 STATIC
@@ -20,13 +20,26 @@ add_library(chapter2 STATIC
 )
 
 target_include_directories(chapter2 PUBLIC
-        src/chapter2/2_3_Classes/include/Vector.h
+        src/chapter2/2_3_Classes/include
 )
 
 add_executable(ATOCpp
         src/main.cpp
-        tests/chapter2_tests/test_TrafficLight.cpp
-        tests/chapter2_tests/test_TrafficLight.h
 )
 
+
 target_link_libraries(ATOCpp PRIVATE chapter1 chapter2)
+
+add_subdirectory(third_party/googletest)
+
+include_directories(third_party/googletest/googletest/include)
+
+add_executable(tests
+        tests/chapter2_tests/Source/test_TrafficLight.cpp
+        tests/chapter2_tests/Source/test_BasicFunctions.cpp
+)
+target_include_directories(tests PUBLIC
+        tests/chapter2_tests/Include
+)
+
+target_link_libraries(tests gtest gtest_main)
