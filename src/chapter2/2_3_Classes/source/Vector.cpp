@@ -21,7 +21,7 @@ Vector::~Vector() {
 // Member function: Access elements in the vector
 double& Vector::operator[](int index) {
     if (index < 0 || index >= this->size()){
-        throw std::out_of_range("Index out of bounds")
+        throw std::out_of_range("Index out of bounds");
     }
     return this->elem[index];
 }
