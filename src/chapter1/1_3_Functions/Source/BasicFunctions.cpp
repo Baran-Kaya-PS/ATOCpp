@@ -17,4 +17,6 @@ namespace My_Func {
         if (ptr == nullptr) return nullptr;
         return ptr + 1; // can be use to iterate through an int array
     }
+
+    auto multiply(double a, double b) -> double {return a*b;};
 }

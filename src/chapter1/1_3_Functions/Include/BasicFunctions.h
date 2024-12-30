@@ -10,5 +10,7 @@ namespace My_Func {
     double square(double value);
 
     int *next_elem(int *ptr);
+
+    double multiply(double a, double b);
 }
 #endif //ATOCPP_BASICFUNCTIONS_H
