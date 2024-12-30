@@ -10,3 +10,7 @@
 TEST(BasicFunctionTest,SqrtPositiveValue){
     EXPECT_NEAR(My_Func::sqrt(16),4,1e-9);
 }
+
+TEST(BasicFunctionTest,SqrtZero){
+    EXPECT_NEAR(My_Func::sqrt(0.0),0,1e-9);
+}
