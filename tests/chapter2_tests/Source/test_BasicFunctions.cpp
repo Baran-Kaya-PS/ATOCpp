@@ -33,4 +33,7 @@ TEST(BasicFunctionTest, NextElemValidPointer){
     EXPECT_EQ(My_Func::next_elem(ptr), &arr[1]); // regarde si on pointe vers le prochain élément
 }
 
+TEST(BasicFunctionTest, NextElemNullPointer){
+    int* ptr = nullptr;
+    EXPECT_EQ(My_Func::next_elem(ptr), nullptr);
 }
