@@ -5,7 +5,7 @@
 #include "../include/BasicFunctions.h"
 namespace My_Func {
     double sqrt(double value) {
-        if (value < 0) return NULL;
+        if (value < 0) return std::numeric_limits<double>::quiet_NaN();
         return std::pow(value, 0.5); // could use std::sqrt function
     }
 
