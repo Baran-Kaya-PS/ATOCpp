@@ -6,6 +6,7 @@
 #include <gtest/gtest.h>
 #include <cmath>
 
+// 30/12/2024 all test works
 
 TEST(BasicFunctionTest,SqrtPositiveValue){
     EXPECT_NEAR(My_Func::sqrt(16),4,1e-9);
