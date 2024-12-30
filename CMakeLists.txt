@@ -28,7 +28,7 @@ add_executable(ATOCpp
 )
 
 
-target_link_libraries(ATOCpp PRIVATE chapter1 chapter2)
+target_link_libraries(ATOCpp PRIVATE chapter1 chapter2 gtest gtest_main)
 
 add_subdirectory(third_party/googletest)
 
@@ -41,5 +41,3 @@ add_executable(tests
 target_include_directories(tests PUBLIC
         tests/chapter2_tests/Include
 )
-
-target_link_libraries(tests gtest gtest_main)
