@@ -11,6 +11,6 @@ namespace My_Func {
 
     int *next_elem(int *ptr);
 
-    double multiply(double a, double b);
+    auto multiply(double a, double b) -> double; // works only if auto keywork is used
 }
 #endif //ATOCPP_BASICFUNCTIONS_H
