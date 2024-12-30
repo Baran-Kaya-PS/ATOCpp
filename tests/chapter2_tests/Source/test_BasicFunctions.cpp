@@ -26,3 +26,11 @@ TEST(BasicFunctionTest,SquarePositiveValue){
 TEST(BasicFunctionTest,SquareZero){
     EXPECT_EQ(My_Func::square(0),0);
 }
+
+TEST(BasicFunctionTest, NextElemValidPointer){
+    int arr[] = {1,2,3};
+    int* ptr = arr;
+    EXPECT_EQ(My_Func::next_elem(ptr), &arr[1]); // regarde si on pointe vers le prochain élément
+}
+
+}
