@@ -18,5 +18,5 @@ namespace My_Func {
         return ptr + 1; // can be use to iterate through an int array
     }
 
-    auto multiply(double a, double b) -> double {return a*b;};
+    auto multiply(double a, double b) -> double {return a*b;} // works only if the function type auto is used
 }
