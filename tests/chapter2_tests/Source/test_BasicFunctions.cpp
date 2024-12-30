@@ -22,3 +22,7 @@ TEST(BasicFunctionTest, SqrtNegativeValue){
 TEST(BasicFunctionTest,SquarePositiveValue){
     EXPECT_EQ(My_Func::square(4.0),16);
 }
+
+TEST(BasicFunctionTest,SquareZero){
+    EXPECT_EQ(My_Func::square(0),0);
+}
