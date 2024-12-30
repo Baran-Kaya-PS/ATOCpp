@@ -18,3 +18,7 @@ TEST(BasicFunctionTest,SqrtZero){
 TEST(BasicFunctionTest, SqrtNegativeValue){
     EXPECT_TRUE(std::isnan(My_Func::sqrt(-1.0)));
 }
+
+TEST(BasicFunctionTest,SquarePositiveValue){
+    EXPECT_EQ(My_Func::square(4.0),16);
+}
