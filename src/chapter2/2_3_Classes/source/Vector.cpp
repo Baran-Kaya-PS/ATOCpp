@@ -4,7 +4,15 @@
 
 #include "../include/Vector.h"
 #include <stdexcept>
-Vector::Vector(int s) : elem{new double[s]}, sz {s} {} // elem = new double, sz = s
+Vector::Vector(int s)
+    : elem {nullptr},
+    sz {s}
+    {
+    if (s < 0) {
+        throw std::length_error{"Vector constructor : Negative size"};
+    }
+    elem = new double[s];
+} // elem = new double, sz = s
 
 // Constructor can be written this way
 /*

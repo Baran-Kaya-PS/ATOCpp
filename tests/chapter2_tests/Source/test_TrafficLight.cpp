@@ -2,7 +2,7 @@
 // Created by Baran on 12/29/2024.
 //
 
-#include "test_TrafficLight.h"
+#include "../Include/test_TrafficLight.h"
 #include <iostream>
 #include <cassert>
 

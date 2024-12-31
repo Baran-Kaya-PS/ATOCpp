@@ -1,7 +1,7 @@
-#include <iostream>
-#include "chapter1/1_2_Programs/include/HelloWorld.h"
-#include "../tests/chapter2_tests/test_TrafficLight.h"
-int main() {
-    runTrafficLightTests();
-    return 0;
+#include <gtest/gtest.h>
+int main(int argc, char **argv) {
+    ::testing::InitGoogleTest(&argc, argv); // Initialisation avec argc/argv
+    int testResult = RUN_ALL_TESTS(); // Exécution des tests
+    std::cout << "Tests completed with result: " << testResult << std::endl;
+    return testResult;
 }
