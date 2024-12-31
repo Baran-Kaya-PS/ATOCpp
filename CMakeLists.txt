@@ -32,6 +32,7 @@ add_executable(ATOCpp
         src/main.cpp
         tests/chapter2_tests/Source/test_TrafficLight.cpp
         tests/chapter2_tests/Source/test_BasicFunctions.cpp
+        tests/chapter2_tests/Source/test_Vector.cpp
 )
 target_include_directories(ATOCpp PUBLIC
         tests/chapter2_tests/Include
