@@ -23,7 +23,7 @@ Vector::Vector(int s) {
 */
 
 Vector::~Vector() {
-
+    delete[] elem;
 }
 
 // Member function: Access elements in the vector
