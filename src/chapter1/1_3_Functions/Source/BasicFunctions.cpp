@@ -2,6 +2,7 @@
 // Created by Baran on 12/28/2024.
 //
 #include <cmath>
+#include <stdexcept>
 #include "../include/BasicFunctions.h"
 namespace My_Func {
     double sqrt(double value) {
@@ -18,5 +19,9 @@ namespace My_Func {
         return ptr + 1; // can be use to iterate through an int array
     }
 
-    auto multiply(double a, double b) -> double {return a*b;} // works only if the function type auto is used
+    auto multiply(double a, double b) -> double {
+        if (a == 0 || b == 0)
+            throw std::runtime_error("Multiplication by 0 is not allowed");
+        return a*b;
+    }
 }
