@@ -7,3 +7,9 @@
 TEST(VectorTest,ConstructorNegativeSize){
     EXPECT_THROW(Vector(-1),std::length_error);
 }
+
+TEST(VectorTest,OutofBoundsAccess){
+    Vector v(5);
+    EXPECT_THROW(v[10] = 42, std::out_of_range);
+    EXPECT_THROW(v[-1] = 2, std::out_of_range);
+}
