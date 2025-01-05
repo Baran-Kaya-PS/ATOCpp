@@ -9,7 +9,7 @@
 class Container {
 public:
     virtual double& operator[](int) = 0;
-    virtual int size() const = 0;
+    virtual int size() const = 0; // const is used here because we only read values, we don't write
     virtual ~Container(){};
 };
 
