@@ -7,12 +7,14 @@
 #include <list>
 #include <initializer_list>
 
-class List_Container {
+class List_Container : public Container {
 private:
     std::list<double> Id;
 public:
     List_Container(){}
     List_Container(std::initializer_list<double> il) : Id(il) {};
+    ~List_Container();
+
 };
 
 
