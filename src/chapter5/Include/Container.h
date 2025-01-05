@@ -7,7 +7,8 @@
 
 
 class Container {
-
+public:
+    virtual double& operator[](int) = 0;
 };
 
 
