@@ -6,3 +6,7 @@
 #include <stdexcept>
 
 Vector_container::Vector_container(int s) : v(s) {}
+
+double &Vector_container::operator[](int i) {
+    return this->v[i];
+}
