@@ -12,7 +12,7 @@ private:
     Vector v;
 public:
     Vector_container(int s);
-
+    ~Vector_container() override = default;
 
 
 };
