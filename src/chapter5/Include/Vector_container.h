@@ -13,7 +13,7 @@ private:
 public:
     Vector_container(int s);
     ~Vector_container() override = default;
-
+    double &operator[](int i) override;
 
 };
 
