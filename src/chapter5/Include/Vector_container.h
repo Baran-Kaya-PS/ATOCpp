@@ -10,8 +10,8 @@
 class Vector_container : public Container {
 private:
     Vector v;
-
-
+public:
+    Vector_container(int s);
 
 
 
