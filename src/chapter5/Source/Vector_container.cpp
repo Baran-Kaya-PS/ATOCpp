@@ -3,3 +3,6 @@
 //
 
 #include "../Include/Vector_container.h"
+#include <stdexcept>
+
+Vector_container::Vector_container(int s) : v(s) {}
