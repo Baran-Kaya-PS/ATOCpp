@@ -19,6 +19,11 @@ add_library(chapter2 STATIC
         src/chapter2/2_3_Classes/source/Vector.cpp
         src/chapter2/2_4_Enumeration/TrafficLight.cpp
 )
+# Bibliothèque chapitre 5
+add_library(chapter2 STATIC
+        src/chapter5/Include/Container.h
+)
+
 target_include_directories(chapter2 PUBLIC
         src/chapter2/2_3_Classes/include
 )
