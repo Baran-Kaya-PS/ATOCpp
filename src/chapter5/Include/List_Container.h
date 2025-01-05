@@ -11,7 +11,7 @@ class List_Container {
 private:
     std::list<double> Id;
 public:
-
+    List_Container(){};
 
 };
 
