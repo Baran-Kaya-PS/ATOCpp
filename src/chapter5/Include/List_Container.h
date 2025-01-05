@@ -6,7 +6,7 @@
 #define ATOCPP_LIST_CONTAINER_H
 #include <list>
 #include <initializer_list>
-
+#include "Container.h"
 class List_Container : public Container {
 private:
     std::list<double> Id;
@@ -15,6 +15,8 @@ public:
     List_Container(std::initializer_list<double> il) : Id(il) {};
     ~List_Container();
 
+    double& operator[](int i) override;
+    int size() const override;
 };
 
 
