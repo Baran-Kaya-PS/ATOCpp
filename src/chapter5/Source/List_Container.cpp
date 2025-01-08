@@ -3,3 +3,7 @@
 //
 
 #include "../Include/List_Container.h"
+
+int List_Container::size() const {
+    return Id.size();
+}
