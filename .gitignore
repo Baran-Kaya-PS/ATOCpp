@@ -1,3 +1,16 @@
 .idea/
 *.iml
 cmake-build-debug/
+# Fichiers d'IDE et de build
+.vscode/
+.DS_Store
+*.class
+*.o
+*.exe
+__pycache__/
+*.pyc
+cmake-build-*/
+target/
+.ipynb_checkpoints/
+node_modules/
+.env
